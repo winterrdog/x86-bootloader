@@ -62,7 +62,7 @@ boot2:
     test al, al
     jz halt                 ; stop when a NULL terminator is hit
     or eax, 0x0200          ; set foreground color to green( the 1 in 0x100 )
-    mov word [ebx], ax      ; move ascii character into ebx for printing
+    mov word [ebx], ax      ; move ascii character and color into ebx for printing
     add ebx, 0x2            ; move ahead 2 bytes since each character on the VGA needs 2 bytes(one for character and one for its attributes )
     jmp .loop
 
