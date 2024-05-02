@@ -1,3 +1,4 @@
+; simplest bootloader on Planet Earth!
 bits 16                                         ; 16-bit code 
 org 0x7c00                                      ; set origin of the boot sector
 
